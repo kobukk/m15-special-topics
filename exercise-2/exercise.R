@@ -18,7 +18,7 @@ AssessFit <- function(model, data = homes, outcome = 'in_sf') {
 
 # Use rpart to fit a model: predict `in_sf` using all other variables
 basic.fit <- rpart(in_sf ~ ., data = homes, method="class")
-
+Basic.Fit <- rpart(in_sf ~ ., data = homes, method="class")
 # How well did we do?
 AssessFit(basic.fit)
 
